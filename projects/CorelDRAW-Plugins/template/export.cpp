@@ -20,10 +20,11 @@ extern "C" __declspec(dllexport) DWORD APIENTRY AttachPlugin(VGCore::IVGAppPlugi
  return 0x100;
 }
 */
-__shared_api_ DWORD __stdcall AttachPlugin(void** pCorelDrawPlugin) {
- VGCore::IVGAppPlugin* CorelDrawPlugin = nullptr;
- *pCorelDrawPlugin = new local::VGAppPlugin();
- LOGINFO("{}", __FUNCTION__);
+__shared_api_ DWORD __stdcall AttachPlugin(void** route) {
+ VGCore::IVGAppPlugin* pCorelDrawPlugin = new local::VGAppPlugin();
+ *route = pCorelDrawPlugin;
+ //LOGINFO("{}", __FUNCTION__);
  //MessageBoxW(NULL, _bstr_t("Hello Martell!"), _bstr_t("https://skstu.com"), MB_OK);
+ 
  return 0x100;
 }

@@ -7,18 +7,6 @@
 #include "export.h"
 
 
-#define COREIDRAW_VERSION "22.0.0.412"
-#ifdef GetFirstChild
-#undef GetFirstChild
-#endif
-#import "ressdk\\22.0.0.412\\TypeLibs\\VGCoreAuto.tlb" \
-rename("GetCommandLine", "MyGetCommandLine") \
-rename("CopyFile", "MyCopyFile") \
-rename("FindWindow", "MyFindWindow")
-
-#include "ressdk\22.0.0.412\sdk\VGAppPlugin.h"
-#include "global.h"
-
 /// /*新生®（上海）**/
 /// /*2022_11_13T13:31:59.0082481Z**/
 /// /*_ _ _ _ _ _ _ www.skstu.com _ _ _ _ _ _ _**/
