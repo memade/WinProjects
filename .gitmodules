@@ -1,6 +1,3 @@
 [submodule "cmake"]
 	path = cmake
 	url = git@github.com:memade/cmake.git
-[submodule "projects/devtools"]
-	path = projects/devtools
-	url = git@github.com:memade/devtools.git
